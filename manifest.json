@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Yabla Helper",
+  "description": "This extension makes yabla really easy",
+  "version": "1.0",
+
+  "icons": {
+    "64": "Yabla64.png",
+    "256": "Yabla256.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://spanish.yabla.com/*"],
+      "js": ["YablaInject.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "Yabla64.png",
+    "default_popup": "popup.html",
+    "default_title": "Yabla made really easy"
+  },
+  "permissions": []
+}
